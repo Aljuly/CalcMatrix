@@ -1,0 +1,79 @@
+{
+  "inputDataDesc" : {
+    "1" : {
+      "operationtag" : "Сложение и вычитание",
+      "description" : "Операция сложения или вычитания двух матриц",
+      "inputfields" : [ {
+        "varname" : "a",
+        "vartype" : "number",
+        "vardesc" : "Множитель матрицы А",
+        "defaultval" : "1"
+      }, {
+        "varname" : "A",
+        "vartype" : "matrix",
+        "vardesc" : "Матрица А",
+        "defaultval" : "1"
+      }, {
+        "varname" : "b",
+        "vartype" : "number",
+        "vardesc" : "Множитель матрицы В",
+        "defaultval" : "1"
+      }, {
+        "varname" : "B",
+        "vartype" : "matrix",
+        "vardesc" : "Матрица B",
+        "defaultval" : "1"
+      } ]
+    },
+    "2" : {
+      "operationtag" : "Умножение",
+      "description" : "Операция умножения двух матриц",
+      "inputfields" : [ {
+        "varname" : "a",
+        "vartype" : "number",
+        "vardesc" : "Множитель матрицы А",
+        "defaultval" : "1"
+      }, {
+        "varname" : "A",
+        "vartype" : "matrix",
+        "vardesc" : "Матрица А",
+        "defaultval" : "1"
+      }, {
+        "varname" : "B",
+        "vartype" : "matrix",
+        "vardesc" : "Матрица B",
+        "defaultval" : "1"
+      } ]
+    },
+    "3" : {
+      "operationtag" : "Обратная матрица",
+      "description" : "Нахождение обратной матрицы",
+      "inputfields" : [ {
+        "varname" : "A",
+        "vartype" : "matrix",
+        "vardesc" : "Исходная матрица",
+        "defaultval" : "1"
+      } ]
+    },
+    "4" : {
+      "operationtag" : "Транспонирование",
+      "description" : "Транспонирование матрицы",
+      "inputfields" : [ {
+        "varname" : "A",
+        "vartype" : "matrix",
+        "vardesc" : "Исходная матрица",
+        "defaultval" : "1"
+      } ]
+    },
+    "5" : {
+      "operationtag" : "Детерминант",
+      "description" : "Нахождение определителя матрицы",
+      "inputfields" : [ {
+        "varname" : "A",
+        "vartype" : "matrix",
+        "vardesc" : "Исходная матрица",
+        "defaultval" : "1"
+      } ]
+    }
+  }
+}
