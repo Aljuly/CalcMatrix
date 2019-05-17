@@ -8,6 +8,7 @@ import java.util.Map;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -15,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 
-//@WebServlet(urlPatterns = "/CalcMatrix", loadOnStartup = 1) 
+@WebServlet(urlPatterns = "/CalcMatrix", loadOnStartup = 1) 
 public class MainCalc extends HttpServlet  {
 
 	private static final long serialVersionUID = 1L;
@@ -37,9 +38,9 @@ public class MainCalc extends HttpServlet  {
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		//req.setAttribute("taskData", tasks);
-		//req.getRequestDispatcher("CalcMatrix.jsp").forward(req, resp);
-	    
+		
+		req.getRequestDispatcher("CalcMatrix.jsp").forward(req, resp);
+		req.setAttribute("taskData", tasks);
 	}
 	
 	@Override

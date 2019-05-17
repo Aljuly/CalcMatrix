@@ -7,7 +7,7 @@
 <servlet>
     <servlet-name>CalcMatrix</servlet-name>
     <servlet-class>com.calcmatrix.jsp.servlet.MainCalc</servlet-class>
-    <!--  <jsp-file>CalcMatrix.jsp</jsp-file> -->
+    <jsp-file>CalcMatrix.jsp</jsp-file>
 </servlet>
 <!--mapping-->
 
